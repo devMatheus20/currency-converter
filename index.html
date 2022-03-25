@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+
+        <main>
+            <label class="label">
+                Converter <b>de</b>
+                <select id="convert-from" class="convert-from" disabled>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label class="label">
+                Converter <b>para</b>
+                <select id="convert-to" class="convert-to">
+                        <option>US$ Dólar Americano</option>
+                        <option>C$ Dólar Canadense</option>
+                        <option>€ Euro</option>
+                        <option>£ Libra</option>
+                </select>
+            </label>
+
+            <label class="label">
+                <b>Valor</b>
+                <input type="number" id="input-value" class="input-value" placeholder="10.000">
+            </label>
+
+            <button id="button-convert" type="button">Converter</button>
+
+            <div class="info-currency">
+                <div class="div-one">
+                    <img class="currency-img" src="./assets/imgs/Brasil.svg" alt="">
+                    <p class="currency-text">Real</p>
+                    <spam id="current-value" class="currency-value">R$ 10.000,00</spam>
+                </div>
+
+                <img class="arrow" src="./assets/imgs/Vector.png" alt="">
+
+                <div class="div-two">
+                    <img id="currency-img" class="currency-img" src="./assets/imgs/Estados-Unidos.svg" alt="">
+                    <p id="currency-text" class="currency-text">Dólar americano</p>
+                    <spam id="currency-value" class="currency-value">US$ 2.000,00</spam>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/script/index.js"></script>
+</body>
+
+</html>
